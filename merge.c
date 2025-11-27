@@ -17,6 +17,7 @@ int main() {
     int B[n2];
     printf("Enter %d sorted elements: ", n2);
     for (int i = 0; i < n2; i++)
+    
         scanf("%d", &B[i]);
 
     int C[n1 + n2];
