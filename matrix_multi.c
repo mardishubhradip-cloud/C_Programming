@@ -10,7 +10,8 @@ int main() {
     printf("Enter rows and columns of second matrix: ");
     scanf("%d %d", &r2, &c2);
 
-    if (c1 != r2) {
+    if (c1 != r2) 
+    {
         printf("Matrix multiplication not possible.\n");
         return 0;
     }
