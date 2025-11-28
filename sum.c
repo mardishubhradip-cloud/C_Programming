@@ -14,8 +14,8 @@ int main()
     for (;n > 0;n = n / 10)
     {
         sum += n % 10;
-        printf("The sum of the digits is %d ",sum);
     }
+    printf("The sum of the digits is %d ",sum);
     return 0;
 
 }
