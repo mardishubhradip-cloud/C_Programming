@@ -1,17 +1,16 @@
-#include<stdio.h>
-int main()
-{   int i,m,n,gcd;
-    printf("Enter the value of m: ");
-    scanf("%d",&m);
-    printf("Enter the value of n: ");
-    scanf("%d",&n);
-    for(i=1;i<=m && i<=n;i++)
-    { 
-        if(m % i == 0 && n % i == 0)
-        {
-        gcd = i;
-        }
+#include <stdio.h>
+int gcd(int a, int b) {
+    while(b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
     }
-    printf("GCD of %d and %d is %d",m,n,gcd);
-return 0;
+    return a;
+}
+int main() {
+    int a, b;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+    printf("GCD(%d, %d) = %d\n", a, b, gcd(a, b));
+    return 0;
 }
